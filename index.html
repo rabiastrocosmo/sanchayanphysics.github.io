@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#061124">
+  <meta name="description" content="Sanchayan Banerjee — Integrated Ph.D., NISER, and visiting guest scientist at the Max Planck Institute for the Science of Light. Research on simulated quantum matter: localization, topology, Floquet and non-Hermitian systems, tensor networks, quantum circuits, and machine learning.">
+  <meta property="og:title" content="Sanchayan Banerjee | Simulating Quantum Matter">
+  <meta property="og:description" content="Research, publications, numerical methods and emerging directions in quantum many-body physics.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/social-preview.png">
+  <title>Sanchayan Banerjee | Simulating Quantum Matter</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Libre+Baskerville:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="cursor-blob" aria-hidden="true"></div>
+  <div class="cursor-core" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="wrap nav-shell">
+      <a class="brand" href="#home" aria-label="Sanchayan Banerjee — home"><span class="monogram">SB</span><span>Sanchayan Banerjee</span></a>
+      <button class="mobile-toggle" id="mobileToggle" type="button" aria-label="Toggle navigation" aria-controls="siteNav" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="navlinks" id="siteNav" aria-label="Main navigation"><a href="#home" class="active">Home</a><a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#projects">Projects</a><a href="#methods">Methods</a><a href="#contact">Contact</a></nav>
+      <div class="nav-actions"><a href="assets/Sanchayan_CV.pdf" target="_blank" rel="noopener noreferrer" class="outline-btn">↧ <span>CV</span></a><a href="https://scholar.google.com/citations?user=Zen0R0wAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" class="outline-btn">✦ <span>Google Scholar</span></a></div>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dash"></span> SIMULATING QUANTUM MATTER</p>
+          <h1>Sanchayan <span>Banerjee</span></h1>
+          <p class="position">Integrated Ph.D.</p>
+          <p class="institution">NISER, Bhubaneswar</p>
+          <p class="visitor">Current Visiting Guest Scientist at <a href="https://mpl.mpg.de/" target="_blank" rel="noopener noreferrer">Max Planck Institute for the Science of Light (MPL)</a>.</p>
+          <div class="hero-buttons"><a href="#publications" class="primary-btn"><span aria-hidden="true">▤</span> View Publications <span aria-hidden="true">→</span></a><a href="#research" class="secondary-btn"><span aria-hidden="true">⌘</span> Research Directions <span aria-hidden="true">→</span></a></div>
+          <blockquote class="feynman"><p>“Study hard what interests you the most in the most undisciplined, irreverent and original manner possible.”</p><cite>— Richard P. Feynman</cite></blockquote>
+          
+        </div>
+        <div class="portrait-stage" aria-label="Photograph of Sanchayan Banerjee">
+          <div class="portrait-halo" aria-hidden="true"></div>
+          <div class="portrait-grid" aria-hidden="true"></div>
+          <img src="assets/hero-approved.webp" alt="Sanchayan Banerjee, portrait from the approved homepage design" class="portrait portrait-approved" fetchpriority="high" width="1118" height="678">
+          <div class="portrait-caption" aria-hidden="true"><span class="dot"></span> Theoretical and Computational Physics</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section research-section wrap" aria-labelledby="research-heading">
+      <div class="section-heading"><div><p class="section-label">RESEARCH / 01</p><h2 id="research-heading">Research Interests</h2></div><p class="section-intro">Intersections of quantum correlations, disorder, dynamics and computation. <span>Choose a topic to explore.</span></p></div>
+      <div class="research-grid" id="researchGrid"></div>
+      
+    </section>
+
+    <div class="wrap two-panels">
+      <section id="publications" class="panel section-anchor" aria-labelledby="pub-heading"><div class="panel-head"><h2 id="pub-heading"><span class="panel-icon">▤</span> Selected Publications</h2><a href="#publicationArchive">View all publications <span aria-hidden="true">→</span></a></div><div id="featuredPublications" class="featured-publications"></div></section>
+      <section id="projects" class="panel section-anchor" aria-labelledby="project-heading"><div class="panel-head"><h2 id="project-heading"><span class="panel-icon">✧</span> Upcoming Projects</h2><span class="panel-meta">Ongoing / developing directions</span></div><div id="projectGrid" class="project-grid"></div></section>
+    </div>
+
+    <section id="methods" class="section methods-section wrap" aria-labelledby="methods-heading"><div class="section-heading compact-heading"><div><p class="section-label">METHODS / 02</p><h2 id="methods-heading">Methods &amp; Computational Expertise</h2></div><p class="section-intro">From microscopic Hamiltonians to simulations of many-body quantum matter.</p></div><div id="methodsGrid" class="methods-grid"></div></section>
+
+    <section id="publicationArchive" class="section publication-archive wrap" aria-labelledby="archive-heading"><div class="section-heading compact-heading"><div><p class="section-label">RESEARCH OUTPUT / 03</p><h2 id="archive-heading">Publication Archive</h2></div><p class="section-intro">Publications and preprints, with direct links for further reading.</p></div><div class="archive-toolbar"><div class="filters" role="group" aria-label="Filter papers"><button class="filter selected" data-filter="all" aria-pressed="true">All <span id="allCount">8</span></button><button class="filter" data-filter="journal" aria-pressed="false">Journal articles</button><button class="filter" data-filter="preprint" aria-pressed="false">Preprints</button></div><label class="search-control"><span class="visually-hidden">Search publications</span><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10" cy="10" r="6.5" stroke="currentColor" fill="none" stroke-width="1.6"/><path d="M15 15L21 21" stroke="currentColor" stroke-width="1.6"/></svg><input type="search" id="searchPubs" placeholder="Search publications…" autocomplete="off"></label></div><div id="publicationList" class="publication-list" aria-live="polite"></div></section>
+
+    <section id="about" class="section about-section wrap" aria-labelledby="about-heading"><div class="section-heading compact-heading"><div><p class="section-label">BACKGROUND / 04</p><h2 id="about-heading">About</h2></div></div><div class="about-columns"><div class="about-text"><p>I am pursuing an Integrated Ph.D. at the <a href="https://www.niser.ac.in/" target="_blank" rel="noopener noreferrer">National Institute of Science Education and Research (NISER)</a>, Bhubaneswar, under <a href="https://www.niser.ac.in/~mishratapan/" target="_blank" rel="noopener noreferrer">Prof. Tapan Mishra</a>, and I am currently a Visiting Guest Scientist at the <a href="https://mpl.mpg.de/" target="_blank" rel="noopener noreferrer">Max Planck Institute for the Science of Light</a>.</p><p>My research explores quantum matter in the presence of interactions, disorder and driving. In equilibrium, I study strongly correlated phases, including symmetry-protected topological phases together with density-ordered and bond-ordered phases in one- and two-dimensional interacting systems. I am also interested in nonequilibrium phenomena involving doublons and repulsive bound states, and in localization physics ranging from multifractality and anomalous mobility edges in quasiperiodic systems to many-body localization, quantum chaos and many-body critical phases.</p><p>Periodically driven systems provide a route to engineer unconventional dynamics and reorganize phase structure away from equilibrium. Non-Hermitian and open-system settings raise complementary questions about nonreciprocity, dissipation, spectral structure, instability and the persistence of correlations in realistic quantum matter. I combine analytical insights with numerical many-body methods such as tensor networks and neural quantum states, and I am also exploring machine-learning-assisted quantum circuits and topoelectric platforms for analogue simulation of quantum matter.</p><a class="text-link" href="assets/Sanchayan_CV.pdf" target="_blank" rel="noopener noreferrer">View my CV (PDF) <span aria-hidden="true">↗</span></a></div><div class="about-timeline"><h3>Academic milestones, schools &amp; conferences</h3>
+<div class="timeline-item"><time>2026</time><div><strong>Localization 2026 — Kyoto, Japan</strong><span>Conference attendee</span></div></div>
+<div class="timeline-item"><time>2026</time><div><strong>Visiting Guest Scientist</strong><span>Max Planck Institute for the Science of Light, Germany</span></div></div>
+<div class="timeline-item"><time>2025</time><div><strong>Computational Methods in Lattice Field Theories</strong><span>Indian Institute of Science (IISc), Bengaluru</span></div></div>
+<div class="timeline-item"><time>2025</time><div><strong>Physics of Quantum Matter School (PQMS 2025)</strong><span>IISER Pune</span></div></div>
+<div class="timeline-item"><time>2024</time><div><strong>Best MSc Thesis Award</strong><span>NISER Integrated MSc–PhD programme; award presented by the President of India, Droupadi Murmu</span></div></div>
+<div class="timeline-item"><time>2024</time><div><strong>School on Classical and Quantum Long-range Interacting Systems</strong><span>TIFR, Mumbai · September–October 2024</span></div></div>
+<div class="timeline-item"><time>2024</time><div><strong>Topical School of Advanced Condensed Matter Physics</strong><span>Institute of Physics, Bhubaneswar</span></div></div>
+<div class="timeline-item"><time>2023</time><div><strong>Physics of Quantum Matter School (PQMS 2023)</strong><span>NISER, Bhubaneswar</span></div></div>
+<div class="timeline-item"><time>2022</time><div><strong>Quantum Information and Quantum Technology Summer School (QIQT)</strong><span>IISER Kolkata</span></div></div>
+<div class="timeline-item"><time>2022</time><div><strong>Amazon Braket Workshop on Quantum Computation</strong><span>Quantum simulation, quantum hardware and quantum machine learning</span></div></div>
+<div class="timeline-item"><time>2022</time><div><strong>Summer School at IUCAA</strong><span>Inter-University Centre for Astronomy and Astrophysics</span></div></div>
+<div class="timeline-item"><time>2022</time><div><strong>Young Physicists' Meet — Workshop organization</strong><span>Helped organize an international workshop for young researchers</span></div></div>
+<div class="timeline-item"><time>2021–</time><div><strong>Integrated MSc–PhD &amp; DAE Junior Research Fellowship</strong><span>NISER, Bhubaneswar</span></div></div>
+<div class="timeline-item"><time>2018–21</time><div><strong>B.Sc. in Physics &amp; INSPIRE Scholarship (SHE)</strong><span>Ramakrishna Mission Residential College, Narendrapur; Department of Science and Technology scholarship</span></div></div>
+</div></div></section>
+
+    <section id="contact" class="contact-section section-anchor"><div class="wrap contact-grid"><div><p class="section-label">CONTACT / 05</p><h2>Let's talk about <span>quantum matter.</span></h2><p>For research conversations, collaborations, or seminars, feel free to get in touch.</p><a class="primary-btn contact-button" href="mailto:sanchayanphysics@gmail.com?subject=Research%20discussion">Send an email <span aria-hidden="true">↗</span></a></div><div class="contact-details"><div><span>EMAIL</span><a href="mailto:sanchayanphysics@gmail.com">sanchayanphysics@gmail.com</a></div><div><span>RESEARCH PROFILES</span><a href="https://scholar.google.com/citations?user=Zen0R0wAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a><a href="https://www.researchgate.net/profile/Sanchayan-Banerjee-2" target="_blank" rel="noopener noreferrer">ResearchGate ↗</a></div><div><span>AFFILIATIONS</span><p>NISER, Bhubaneswar · Max Planck Institute for the Science of Light</p></div></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-flex"><a href="#home" class="footer-brand"><span class="monogram">SB</span> Sanchayan Banerjee</a><span>© <span id="year">2026</span> Sanchayan Banerjee. All rights reserved.</span><a href="#top" class="back-top">Back to top ↑</a></div></footer>
+  <dialog id="detailDialog" class="detail-dialog" aria-labelledby="dialogTitle"><div class="dialog-inner"><button type="button" class="dialog-close" id="dialogClose" aria-label="Close details">×</button><p class="dialog-kicker" id="dialogKicker">RESEARCH DIRECTION</p><h2 id="dialogTitle"></h2><p class="dialog-description" id="dialogDescription"></p><div class="dialog-image-wrap"><img id="dialogImage" src="assets/mockup-floquet.webp" alt="Illustrative scientific diagram from approved design"></div><div class="dialog-bottom"><div><h3>What I'm exploring</h3><p id="dialogFocus"></p></div></div><div id="dialogRelated" class="dialog-related"></div><p class="dialog-note">Research overview only — ongoing directions are described without unpublished specifics.</p></div></dialog>
+</body>
+</html>
